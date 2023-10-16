@@ -102,7 +102,7 @@
             display:none;
         }
 
- 
+
 
        
         /* header > .second-header */
@@ -345,12 +345,12 @@
             width : 100%;
             top:1000px;
            
-            margin:10px;
+            
  
         }
         .wrapper>main>section.main-02 .section02-bg
         {
-            width : 1000px;
+            width : 1200px;
             /* border : 1px solid gray; */
             display:flex;
             justify-content: center;
@@ -437,7 +437,7 @@
             		<li><a href="#"> 회원가입 </a></li>
             		<li><a href="#"> 바로예매 </a></li>
                     <li><a href="">고객센터</a></li>
-                    <li><a href="#"><span class="material-symbols-outlined">menu</span></a></li>
+                    <li><a href="javascript:void(0)"><span class="material-symbols-outlined" data-bs-toggle="modal" data-bs-target="#exampleModal">menu</span></a></li>
             	</ul>
             </div>
 
@@ -587,15 +587,99 @@
                                     <div class="swiper-scrollbar"></div>
                                 </div>
             </section>
+            <!-- 상영관 소개 -->
+            <style>
+                .movieroom{
+                    width:1200px;
+                    height:350px;
+                    margin: 0 auto;
+                    background-color: white;
+
+                }
+                .movieroom>.movieroom-header{
+                    display:flex;
+                    justify-content: space-between;
+                    border : 1px solid gray;
+                }
+                .movieroom>.movieroom-body{
+                    display:flex;
+                    justify-content: space-between;
+                }
+                .movieroom>.movieroom-body>*{
+                    border : 1px solid gray;
+                    border-radius: 25px;
+                    width:100%;
+                    height:300px;
+                }
+            </style>
+            <section class="movieroom">
+                <div class="movieroom-header">
+                        <div>
+                            <h3>특별관</h3>
+                        </div>
+                        <div>
+                            <button>전체보기 > </button>
+                        </div>
+                </div>
+                <div class="movieroom-body">
+                    <div class="movieroom-body"> <img src="" alt=""></div>
+                    <div class="">
+                            <div><span>1관</span> <span>#DISCRIPTION</span></div>
+                            <div><span>2관</span> <span>#DISCRIPTION</span></div>
+                            <div><span>3관</span> <span>#DISCRIPTION</span></div>
+                            <div><span>4관</span> <span>#DISCRIPTION</span></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 상영관 소개 -->
             <section class="">
 
-            </section>
+            </section>  
+            <!-- 패키지 / 영화관람권 /기프트카드 -->
+            <section class="">
+            </section>    
+            <!-- 공지사항 / 앱다운로드 -->
+            <section class="">
+            </section>    
+            
         </main>
 
 
         <footer> </footer>
         
 </div>
+
+<style>
+    /* 모달창 Style */
+    .modal-dialog.modal-xl {
+        position:relative;
+        top:80px;
+        width:1200px;
+        height: 700px;
+  
+    }
+    .modal-dialog .modal-body{
+        height:700px;
+    }
+</style>
+
+<!-- Top-header Menu Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-fullsize" >
+      <div class="modal-content">
+        <div class="modal-header"> 
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+         
+        </div>
+        <div class="modal-footer">
+          
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -649,7 +733,7 @@
             },
             loop:true, //무한재생
 
-            slidesPerView:3,  //한번에 보여주는 slide개수
+            slidesPerView:5,  //한번에 보여주는 slide개수
             spaceBetween:0,   //slide 간격 (px)
             centeredSlides:true,
             
